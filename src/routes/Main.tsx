@@ -6,7 +6,10 @@ import Home from '../components/templates/Home'
 const Main: React.FC = () => {
     return (
         <Switch>
-            <Route path='/home'>
+            <Route path='/'>
+                <Home />
+            </Route>
+            <Route path='/:id'>
                 <Home />
             </Route>
             <Route path='*'>

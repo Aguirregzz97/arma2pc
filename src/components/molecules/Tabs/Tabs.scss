@@ -1,0 +1,15 @@
+div.Header_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8.25rem;
+  & > .Navbar_container {
+    width: 78.75rem;
+    display: flex;
+    justify-content: space-between;
+    & > .Tabs {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

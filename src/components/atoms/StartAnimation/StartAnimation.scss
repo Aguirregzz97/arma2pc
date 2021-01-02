@@ -1,0 +1,58 @@
+@import "./../../../styles/shared.scss";
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap");
+
+div.Animation_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  & > .Text h1 {
+    font-family: "Anonymous Pro", monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid $core-yellow; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em; /* Adjust as needed */
+    animation: typing 1.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+      from,
+      to {
+        border-color: transparent;
+      }
+      50% {
+        border-color: orange;
+      }
+    }
+  }
+}
+
+div.PC_images {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5rem;
+  & > .Image {
+    transition: opacity 1s ease-in-out;
+    filter: blur(12px);
+    transform: scale(1.1);
+    opacity: 0;
+    animation: showImages 0.6s 1.7s forwards;
+    width: 25rem;
+    @keyframes showImages {
+      to {
+        opacity: 100;
+        filter: blur(0);
+        transform: scale(1);
+      }
+    }
+  }
+}
