@@ -1,21 +1,19 @@
-import "./Navbar.scss"
+import './Navbar.scss'
 
-import * as React from "react"
+import * as React from 'react'
 
-import StartAnimation from "../../atoms/StartAnimation/StartAnimation"
-import Tabs from "../../molecules/Tabs/Tabs"
+import Tabs from '../../molecules/Tabs/Tabs'
 
-const Navbar: React.FC = () => {
+export const TabsObject = ['Home', 'Arma2PC', 'About', 'Faq']
+
+const Navbar: React.FC = ({ children }) => {
   return (
-    <Tabs
-      tabs={["Home", "Arma2PC", "About", "Faq"]}
-      tabsContents={[
-        <StartAnimation key='' />,
-        <>Arma2PC content</>,
-        <>About Content</>,
-        <>FAQ Content</>,
-      ]}
-    />
+    <div className='Navbar_outer_container'>
+      <div className='Navbar_inner_container'>
+        <Tabs tabs={TabsObject} />
+        {children}
+      </div>
+    </div>
   )
 }
 

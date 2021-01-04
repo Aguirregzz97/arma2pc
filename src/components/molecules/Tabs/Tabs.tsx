@@ -1,16 +1,28 @@
-import "./Tabs.scss"
+import './Tabs.scss'
 
-import * as React from "react"
-import { useHistory } from "react-router-dom"
+import { Slide } from '@material-ui/core'
+import Dialog from '@material-ui/core/Dialog'
+import { TransitionHandlerProps } from '@material-ui/core/transitions/transition'
+import * as React from 'react'
+import { useHistory } from 'react-router-dom'
 
-import Tab from "../../atoms/Tab/Tab"
+import IconButton from '../../atoms/IconButton/IconButton'
+import Tab from '../../atoms/Tab/Tab'
+import DialogMobile from '../../organisms/Navbar/DialogMobile/DialogMobile'
 
 export type TabsProps = {
   tabs: string[]
-  tabsContents: JSX.Element[]
 }
 
-const Tabs: React.FC<TabsProps> = ({ tabs, tabsContents }) => {
+const Transition = React.forwardRef(function Transition(
+  props: TransitionHandlerProps & { children?: React.ReactElement },
+  ref: React.Ref<unknown>
+) {
+  return <Slide direction='down' ref={ref} {...props} />
+})
+
+const Tabs: React.FC<TabsProps> = ({ tabs }) => {
+  const [dialogOpen, setDialogOpen] = React.useState(false)
   const [activeTab, setActiveTab] = React.useState(0)
   const history = useHistory()
   return (
@@ -20,7 +32,7 @@ const Tabs: React.FC<TabsProps> = ({ tabs, tabsContents }) => {
           <div className='Logo'>Arma2PC.com</div>
           <div className='Tabs'>
             {tabs.map((tab, index) => {
-              const status = index === activeTab ? "Tab_active" : "Tab_inactive"
+              const status = index === activeTab ? 'Tab_active' : 'Tab_inactive'
               return (
                 <Tab
                   key={`tab-${index}`}
@@ -28,15 +40,36 @@ const Tabs: React.FC<TabsProps> = ({ tabs, tabsContents }) => {
                   status={status}
                   onClick={() => {
                     setActiveTab(index)
-                    history.push(`/${tab.toLocaleLowerCase()}`)
+                    history.push(`/${tab}`)
                   }}
                 />
               )
             })}
           </div>
+          <div className='Menu'>
+            <IconButton
+              onClick={() => {
+                setDialogOpen(true)
+              }}
+              iconColor='yellow'
+              size='lg'
+              iconType='Icon_menu'
+            />
+          </div>
         </div>
       </div>
-      {tabsContents[activeTab]}
+      <Dialog
+        className='.MuiPaper-root'
+        fullScreen
+        open={dialogOpen}
+        TransitionComponent={Transition}
+      >
+        <DialogMobile
+          setDialogOpen={() => setDialogOpen(false)}
+          initialTab={activeTab}
+          onNavbarMobileClosed={() => setDialogOpen(false)}
+        />
+      </Dialog>
     </>
   )
 }

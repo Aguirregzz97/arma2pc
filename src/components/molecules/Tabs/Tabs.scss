@@ -1,15 +1,64 @@
+@import '../../../styles/shared.scss';
+
+div.Logo {
+  font-size: 1.1rem;
+}
+
 div.Header_container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 8.25rem;
   & > .Navbar_container {
-    width: 78.75rem;
     display: flex;
     justify-content: space-between;
+    width: 75rem;
+    @include respond-to(large-screens) {
+      padding: 0 2rem;
+    }
+    @include respond-to(medium-screens) {
+      padding: 0 2rem;
+    }
+    @include respond-to(small-screens) {
+      padding: 0 2rem;
+    }
+    @include respond-to(xsmall-screens) {
+      padding: 0 2rem;
+    }
     & > .Tabs {
       display: flex;
       justify-content: space-between;
+      @include respond-to(medium-screens) {
+        display: none;
+      }
+
+      @include respond-to(small-screens) {
+        display: none;
+      }
+
+      @include respond-to(xsmall-screens) {
+        display: none;
+      }
     }
   }
+}
+
+div.Menu {
+  display: none;
+
+  @include respond-to(medium-screens) {
+    display: block;
+  }
+
+  @include respond-to(small-screens) {
+    display: block;
+  }
+
+  @include respond-to(xsmall-screens) {
+    display: block;
+  }
+}
+
+div.MuiPaper-root {
+  background-color: $core-light-grey;
 }

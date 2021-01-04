@@ -1,10 +1,11 @@
-@import "../../../styles/shared.scss";
+@import '../../../styles/shared.scss';
 
 div.Tab {
   padding: 0 1.1rem;
   outline: none;
   & > p {
     font-weight: 550;
+    font-size: 1.1rem;
   }
   & :hover {
     cursor: pointer;
