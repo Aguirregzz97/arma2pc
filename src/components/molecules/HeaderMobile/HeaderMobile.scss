@@ -1,0 +1,11 @@
+@import '../../../styles/shared.scss';
+
+div.HeaderMobile {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  & > p {
+    font-size: 1.1rem;
+    color: $core-black;
+  }
+}
