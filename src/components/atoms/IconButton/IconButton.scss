@@ -1,0 +1,71 @@
+@import '../../../styles/shared.scss';
+
+button.IconButton {
+  outline: none;
+  box-shadow: 0 4px 5px $core-shadow;
+  border: none;
+  display: flex;
+  &:hover {
+    cursor: pointer;
+  }
+  &:disabled {
+    cursor: unset;
+    opacity: 0.25;
+  }
+  div.IconContainer {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+button.IconButton_primary {
+  background: $core-yellow;
+}
+
+button.IconButton_clear {
+  background: transparent;
+  box-shadow: none;
+  &:hover {
+    background-color: transparent;
+    border-color: transparent;
+  }
+}
+
+button.IconButton_sm {
+  height: 2rem;
+  width: 2rem;
+}
+
+button.IconButton_md {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+button.IconButton_lg {
+  height: 3rem;
+  width: 3rem;
+}
+
+button.Circle_sm {
+  border-radius: 1rem;
+}
+
+button.Circle_md {
+  border-radius: 1.25rem;
+}
+
+button.Circle_lg {
+  border-radius: 1.5rem;
+}
+
+button.Square_sm {
+  border-radius: 0.2rem;
+}
+
+button.Square_md {
+  border-radius: 0.25rem;
+}
+
+button.Square_lg {
+  border-radius: 0.3rem;
+}
