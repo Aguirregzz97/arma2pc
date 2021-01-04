@@ -1,0 +1,52 @@
+@import '../../../styles/shared.scss';
+
+div.Icon {
+  color: transparent;
+  background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+}
+
+div.Icon_menu {
+  mask: url('../../../assets/icons/menu.svg');
+  -webkit-mask: url('../../../assets/icons/menu.svg') no-repeat center / contain;
+}
+
+div.Icon_close {
+  mask: url('../../../assets/icons/close.svg');
+  -webkit-mask: url('../../../assets/icons/close.svg') no-repeat center /
+    contain;
+}
+
+div.Icon_sm {
+  height: 1rem;
+  width: 1rem;
+}
+
+div.Icon_md {
+  height: 1.5rem;
+  width: 1.5rem;
+  min-height: 1.5rem;
+  min-width: 1.5rem;
+}
+
+div.Icon_lg {
+  height: 2rem;
+  width: 2rem;
+}
+
+div.Icon_grey {
+  background-color: $core-grey;
+}
+
+div.Icon_white {
+  background-color: $core-white;
+}
+
+div.Icon_yellow {
+  background-color: $core-yellow;
+}
+
+div.Icon_black {
+  background-color: $core-black;
+}
