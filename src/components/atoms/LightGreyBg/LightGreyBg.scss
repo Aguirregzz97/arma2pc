@@ -1,0 +1,11 @@
+@import '../../../styles/shared.scss';
+
+div.LightGrey_bg {
+  width: 100%;
+  min-height: 100vh;
+  background: $core-light-grey;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
