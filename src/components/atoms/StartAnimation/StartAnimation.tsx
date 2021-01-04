@@ -2,7 +2,7 @@ import './StartAnimation.scss'
 
 import * as React from 'react'
 
-import pcbuild from '../../../assets/img/pcbuild1.jpg'
+import pcbuild from '../../../assets/img/home-pc-1.png'
 
 const StartAnimation: React.FC = () => {
   return (
