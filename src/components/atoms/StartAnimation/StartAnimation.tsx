@@ -1,8 +1,8 @@
-import "./StartAnimation.scss"
+import './StartAnimation.scss'
 
-import * as React from "react"
+import * as React from 'react'
 
-import pcbuild from "../../../assets/img/pcbuild1.jpg"
+import pcbuild from '../../../assets/img/pcbuild1.jpg'
 
 const StartAnimation: React.FC = () => {
   return (

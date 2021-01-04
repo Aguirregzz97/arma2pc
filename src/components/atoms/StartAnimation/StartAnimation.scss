@@ -1,19 +1,43 @@
-@import "./../../../styles/shared.scss";
-@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap");
+@import './../../../styles/shared.scss';
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
 
 div.Animation_container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 20rem;
+  @include respond-to(medium-screens) {
+    height: 18rem;
+  }
+
+  @include respond-to(small-screens) {
+    height: 18rem;
+  }
+
+  @include respond-to(xsmall-screens) {
+    height: 10rem;
+  }
   & > .Text h1 {
-    font-family: "Anonymous Pro", monospace;
+    font-family: 'Anonymous Pro', monospace;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: 0.15em solid $core-yellow; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 0.15em; /* Adjust as needed */
+    letter-spacing: 0.1rem; /* Adjust as needed */
     animation: typing 1.5s steps(40, end), blink-caret 0.75s step-end infinite;
+
+    @include respond-to(medium-screens) {
+      font-size: 1.8rem;
+    }
+
+    @include respond-to(small-screens) {
+      font-size: 1.4rem;
+    }
+
+    @include respond-to(xsmall-screens) {
+      font-size: 1.2rem;
+    }
+
     @keyframes typing {
       from {
         width: 0;
@@ -39,14 +63,27 @@ div.Animation_container {
 div.PC_images {
   display: flex;
   justify-content: space-between;
-  padding: 0 5rem;
+  flex-wrap: wrap;
   & > .Image {
     transition: opacity 1s ease-in-out;
     filter: blur(12px);
     transform: scale(1.1);
     opacity: 0;
-    animation: showImages 0.6s 1.7s forwards;
+    animation: showImages 0.6s 1s forwards;
     width: 25rem;
+
+    @include respond-to(medium-screens) {
+      display: none;
+    }
+
+    @include respond-to(small-screens) {
+      display: none;
+    }
+
+    @include respond-to(xsmall-screens) {
+      display: none;
+    }
+
     @keyframes showImages {
       to {
         opacity: 100;

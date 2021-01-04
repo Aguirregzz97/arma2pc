@@ -1,3 +1,59 @@
 $core-grey: #686767;
 $core-white: #f2f1ee;
 $core-yellow: #ffc31a;
+$core-shadow: #0003;
+$core-light-grey: #c8c8c8;
+$core-black: #131415;
+
+// media queries
+$break-xs: 480px;
+$break-sm: 768px;
+$break-md: 1024px;
+$break-lg: 1200px;
+
+@mixin respond-to($media) {
+  @if $media == xsmall-screens {
+    @media only screen and (max-width: $break-xs) {
+      @content;
+    }
+  } @else if $media == small-screens {
+    @media only screen and (min-width: $break-xs + 1) and (max-width: $break-sm) {
+      @content;
+    }
+  } @else if $media == medium-screens {
+    @media only screen and (min-width: $break-sm + 1) and (max-width: $break-md) {
+      @content;
+    }
+  } @else if $media == large-screens {
+    @media only screen and (min-width: $break-md + 1) and (max-width: $break-lg) {
+      @content;
+    }
+  } @else if $media == xlarge-screens {
+    @media only screen and (min-width: $break-lg + 1) {
+      @content;
+    }
+  }
+}
+
+@mixin scrollbars {
+  &::-webkit-scrollbar {
+    width: 0.3875rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $core-yellow;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #202020;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar:horizontal {
+    height: 0.3875rem;
+  }
+}
