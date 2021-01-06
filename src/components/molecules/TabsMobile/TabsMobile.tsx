@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 
 import { getLastURL } from '../../../utils/GetLastUrl'
 import { getTabIndex } from '../../../utils/GetTabIndex'
-import { TabsObject } from '../../organisms/Navbar/Navbar'
+import { TabsObject } from '../../../utils/TabsObject'
 
 type TabsMobileProps = {
   setDialogOpen: () => void

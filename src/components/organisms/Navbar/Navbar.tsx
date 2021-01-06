@@ -2,9 +2,8 @@ import './Navbar.scss'
 
 import * as React from 'react'
 
+import { TabsObject } from '../../../utils/TabsObject'
 import Tabs from '../../molecules/Tabs/Tabs'
-
-export const TabsObject = ['Home', 'Arma2PC', 'About', 'Faq']
 
 const Navbar: React.FC = ({ children }) => {
   return (
