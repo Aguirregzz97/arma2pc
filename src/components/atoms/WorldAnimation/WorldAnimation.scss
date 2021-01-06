@@ -1,0 +1,67 @@
+@import './../../../styles/shared.scss';
+
+div.WorldAnimation_container {
+  position: relative;
+  min-height: 46.5rem;
+  width: 27.875rem;
+  @include respond-to(medium-screens) {
+    width: 34.82rem;
+  }
+
+  @include respond-to(small-screens) {
+    width: 25.5rem;
+  }
+
+  @include respond-to(xsmall-screens) {
+    width: 18.56rem;
+  }
+  & > :first-child {
+    position: absolute;
+    animation: spin 10s linear infinite;
+    height: 60%;
+    @include respond-to(medium-screens) {
+      height: 75%;
+    }
+
+    @include respond-to(small-screens) {
+      height: 55%;
+    }
+
+    @include respond-to(xsmall-screens) {
+      height: 40%;
+    }
+  }
+  & > :nth-child(2) {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    height: 55%;
+    @include respond-to(medium-screens) {
+      height: 70%;
+    }
+
+    @include respond-to(small-screens) {
+      height: 50%;
+    }
+
+    @include respond-to(xsmall-screens) {
+      height: 35%;
+    }
+  }
+
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  div.Dot_world {
+    display: absolute;
+    margin-top: 14rem;
+    margin-left: 3rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: $core-yellow;
+  }
+}
