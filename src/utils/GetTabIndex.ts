@@ -1,8 +1,9 @@
 const TabIndexMap: Record<string, number> = {
   'Home': 0,
   'Arma2PC': 1,
-  'About': 2,
-  'Faq': 3,
+  'Contact': 2,
+  'About': 3,
+  'Faq': 4,
 }
 
 export function getTabIndex(tab: string) {

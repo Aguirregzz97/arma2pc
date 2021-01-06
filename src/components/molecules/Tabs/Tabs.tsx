@@ -6,6 +6,8 @@ import { TransitionHandlerProps } from '@material-ui/core/transitions/transition
 import * as React from 'react'
 import { useHistory } from 'react-router-dom'
 
+import { getLastURL } from '../../../utils/GetLastUrl'
+import { getTabIndex } from '../../../utils/GetTabIndex'
 import IconButton from '../../atoms/IconButton/IconButton'
 import Tab from '../../atoms/Tab/Tab'
 import DialogMobile from '../../organisms/Navbar/DialogMobile/DialogMobile'
@@ -22,8 +24,10 @@ const Transition = React.forwardRef(function Transition(
 })
 
 const Tabs: React.FC<TabsProps> = ({ tabs }) => {
+  const url = window.location.href
+  const currentTabIndex: number = getTabIndex(getLastURL(url))
   const [dialogOpen, setDialogOpen] = React.useState(false)
-  const [activeTab, setActiveTab] = React.useState(0)
+  const [activeTab, setActiveTab] = React.useState(currentTabIndex)
   const history = useHistory()
   return (
     <>
@@ -39,8 +43,8 @@ const Tabs: React.FC<TabsProps> = ({ tabs }) => {
                   text={tab}
                   status={status}
                   onClick={() => {
-                    setActiveTab(index)
                     history.push(`/${tab}`)
+                    setActiveTab(index)
                   }}
                 />
               )
