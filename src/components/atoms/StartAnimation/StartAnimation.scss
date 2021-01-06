@@ -5,17 +5,17 @@ div.Animation_container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20rem;
+  margin: 3rem 0;
   @include respond-to(medium-screens) {
-    height: 18rem;
+    margin: 2.8rem 0;
   }
 
   @include respond-to(small-screens) {
-    height: 18rem;
+    margin: 2.6rem 0;
   }
 
   @include respond-to(xsmall-screens) {
-    height: 8rem;
+    margin: 2.4rem 0;
   }
   & > .Text h1 {
     font-family: 'Anonymous Pro', monospace;
@@ -63,7 +63,7 @@ div.Animation_container {
 div.PC_images {
   display: flex;
   justify-content: space-around;
-  padding: 0 5rem;
+  padding: 0 10%;
   & > .Image {
     transition: opacity 1s ease-in-out;
     filter: blur(12px);
@@ -87,7 +87,7 @@ div.PC_images {
   }
   & > :nth-child(2) {
     @include respond-to(xsmall-screens) {
-      width: 20rem;
+      width: 23rem;
     }
   }
   & > :nth-child(3) {
