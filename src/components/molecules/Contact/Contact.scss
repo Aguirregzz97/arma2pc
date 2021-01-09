@@ -1,6 +1,21 @@
+@import './../../../styles/shared.scss';
+
 div.Contact_container {
   margin-top: 5rem;
   display: flex;
   justify-content: center;
   padding: 0 2rem;
+  @include respond-to(medium-screens) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @include respond-to(small-screens) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @include respond-to(xsmall-screens) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0rem;
+  }
 }

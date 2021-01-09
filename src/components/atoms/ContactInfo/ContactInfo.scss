@@ -12,6 +12,18 @@ div.ContactInfo_container {
     font-size: 1.1rem;
     margin-bottom: 2rem;
   }
+  @include respond-to(medium-screens) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+  @include respond-to(small-screens) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+  @include respond-to(xsmall-screens) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
 }
 
 div.ContactMedia_container {
