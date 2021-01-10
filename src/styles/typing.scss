@@ -2,7 +2,6 @@
 
 @mixin typing($font-size, $time) {
   font-size: $font-size;
-  font-family: 'Anonymous Pro', monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.1em solid $core-yellow; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */

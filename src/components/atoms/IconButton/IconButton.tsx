@@ -20,6 +20,7 @@ const ICON_BUTTON_SIZES: Readonly<Record<IconSize, string>> = {
   sm: 'IconButton_sm',
   md: 'IconButton_md',
   lg: 'IconButton_lg',
+  xlg: 'IconButton_xlg',
 }
 
 const ICON_BUTTON_TYPES: Readonly<Record<IconButtonType, string>> = {
@@ -34,11 +35,13 @@ const ICON_BUTTON_SHAPES: Readonly<
     sm: 'Circle_sm',
     md: 'Circle_md',
     lg: 'Circle_lg',
+    xlg: 'Circle_xlg',
   },
   square: {
     sm: 'Square_sm',
     md: 'Square_md',
     lg: 'Square_lg',
+    xlg: 'Square_clg',
   },
 }
 

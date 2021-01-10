@@ -18,6 +18,18 @@ div.Icon_close {
     contain;
 }
 
+div.Icon_client {
+  mask: url('../../../assets/icons/client.svg');
+  -webkit-mask: url('../../../assets/icons/client.svg') no-repeat center /
+    contain;
+}
+
+div.Icon_provider {
+  mask: url('../../../assets/icons/provider.svg');
+  -webkit-mask: url('../../../assets/icons/provider.svg') no-repeat center /
+    contain;
+}
+
 div.Icon_sm {
   height: 1rem;
   width: 1rem;
@@ -33,6 +45,11 @@ div.Icon_md {
 div.Icon_lg {
   height: 2rem;
   width: 2rem;
+}
+
+div.Icon_xlg {
+  height: 3rem;
+  width: 3rem;
 }
 
 div.Icon_grey {

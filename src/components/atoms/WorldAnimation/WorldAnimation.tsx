@@ -11,7 +11,9 @@ const WorldAnimation: React.FC = () => {
       <img src={neuronsImage} alt='neurons' />
       <img src={worldImage} alt='world' />
       <div className='Dot_world' />
-      <span className='WorldAnimation_city'>Monterrey <div className="WorldAnimation_arrow_down"></div></span>
+      <span className='WorldAnimation_city'>
+        Monterrey <div className='WorldAnimation_arrow_down'></div>
+      </span>
     </div>
   )
 }

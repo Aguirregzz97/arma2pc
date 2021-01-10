@@ -4,7 +4,6 @@ div.ContactInfo_container {
   margin-right: 10rem;
   max-width: 26rem;
   & > div h1 {
-    display: inline-block;
     @include typing(3rem, 0.8s);
     margin-bottom: 2rem;
   }

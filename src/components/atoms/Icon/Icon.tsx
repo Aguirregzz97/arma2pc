@@ -2,9 +2,13 @@ import './Icon.scss'
 
 import * as React from 'react'
 
-export type IconType = 'Icon_menu' | 'Icon_close'
+export type IconType =
+  | 'Icon_menu'
+  | 'Icon_close'
+  | 'Icon_client'
+  | 'Icon_provider'
 
-export type IconSize = 'sm' | 'md' | 'lg'
+export type IconSize = 'sm' | 'md' | 'lg' | 'xlg'
 export type IconColor = 'grey' | 'yellow' | 'white' | 'black'
 
 export type IconProps = {
@@ -18,6 +22,7 @@ const ICON_SIZES: Readonly<Record<IconSize, string>> = {
   sm: 'Icon_sm',
   md: 'Icon_md',
   lg: 'Icon_lg',
+  xlg: 'Icon_xlg',
 }
 
 const ICON_COLORS: Readonly<Record<IconColor, string>> = {
