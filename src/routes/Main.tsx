@@ -2,6 +2,7 @@ import * as React from 'react'
 import { Redirect, Route, Switch } from 'react-router-dom'
 
 import BlackBg from '../components/atoms/BlackBg/BlackBg'
+import OurMission from '../components/atoms/OurMission/OurMission'
 import Contact from '../components/molecules/Contact/Contact'
 import Home from '../components/organisms/Navbar/Home/Home'
 import Navbar from '../components/organisms/Navbar/Navbar'
@@ -22,7 +23,7 @@ const Main: React.FC = () => {
         </Route>
         <Route path='/About'>
           <Navbar>
-            <div>About Content</div>
+            <OurMission />
           </Navbar>
         </Route>
         <Route path='/Contact'>

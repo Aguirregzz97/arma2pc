@@ -1,8 +1,8 @@
 const TabIndexMap: Record<string, number> = {
   'Home': 0,
   'Arma2PC': 1,
-  'Contact': 2,
-  'About': 3,
+  'About': 2,
+  'Contact': 3,
   'Faq': 4,
 }
 
