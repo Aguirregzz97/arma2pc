@@ -1,0 +1,14 @@
+@import './../../../styles/shared.scss';
+@import './../../../styles/typing.scss';
+
+div.Explain_container {
+  :first-child {
+    & > h1 {
+      @include typing(3rem, 0.8s);
+      margin-bottom: 1.5rem;
+    }
+  }
+  :nth-child(2) {
+    font-size: 1.2rem;
+  }
+}
