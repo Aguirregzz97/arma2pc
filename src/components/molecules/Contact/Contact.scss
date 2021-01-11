@@ -5,7 +5,6 @@ div.Contact_container {
   margin-bottom: 23rem;
   display: flex;
   justify-content: center;
-  padding: 0 2rem;
   @include respond-to(medium-screens) {
     flex-direction: column;
     align-items: center;
@@ -13,10 +12,16 @@ div.Contact_container {
   @include respond-to(small-screens) {
     flex-direction: column;
     align-items: center;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
   }
   @include respond-to(xsmall-screens) {
     flex-direction: column;
     align-items: center;
     margin-top: 0rem;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }

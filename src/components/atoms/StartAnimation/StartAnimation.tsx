@@ -8,7 +8,7 @@ import pcbuild3 from '../../../assets/img/home-pc-3.png'
 
 const StartAnimation: React.FC = () => {
   return (
-    <div>
+    <div className='StartAnimation_container'>
       <div className='Animation_container'>
         <div className='Text'>
           <h1>La PC que siempre has querido.</h1>

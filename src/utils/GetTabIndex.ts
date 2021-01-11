@@ -1,4 +1,5 @@
 const TabIndexMap: Record<string, number> = {
+  '': 0,
   'Home': 0,
   'Arma2PC': 1,
   'About': 2,

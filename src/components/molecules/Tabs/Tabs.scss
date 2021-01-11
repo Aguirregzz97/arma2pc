@@ -1,10 +1,14 @@
 @import '../../../styles/shared.scss';
 
 img.Logo {
-  height: auto;
+  height: 31px;
   width: 200px;
   &:hover {
     cursor: pointer;
+  }
+  @include respond-to(xsmall-screens) {
+    height: 25px;
+    width: 175px;
   }
 }
 
@@ -16,6 +20,7 @@ div.Header_container {
   & > .Navbar_container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 75rem;
     @include respond-to(large-screens) {
       padding: 0 2rem;
@@ -49,6 +54,10 @@ div.Header_container {
 
 div.Menu {
   display: none;
+
+  & > :first-child {
+    height: 2rem;
+  }
 
   @include respond-to(medium-screens) {
     display: block;

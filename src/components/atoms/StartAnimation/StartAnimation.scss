@@ -1,11 +1,23 @@
 @import './../../../styles/shared.scss';
 @import './../../../styles/typing.scss';
 
+div.StartAnimation_container {
+  padding-top: 14rem;
+  padding-bottom: 20rem;
+  @include respond-to(xsmall-screens) {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 0;
+  }
+}
+
 div.Animation_container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 2.7rem 0;
+  margin-bottom: 8rem;
   @include respond-to(medium-screens) {
     margin: 2.8rem 0;
   }
@@ -19,6 +31,9 @@ div.Animation_container {
   }
   & > .Text h1 {
     @include typing(3rem, 1.5s);
+    @include respond-to(xsmall-screens) {
+      font-size: 1.05rem;
+    }
   }
 }
 
@@ -49,7 +64,7 @@ div.PC_images {
   }
   & > :nth-child(2) {
     @include respond-to(xsmall-screens) {
-      width: 23rem;
+      width: 18rem;
     }
   }
   & > :nth-child(3) {
