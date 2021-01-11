@@ -2,7 +2,9 @@ import './StartAnimation.scss'
 
 import * as React from 'react'
 
-import pcbuild from '../../../assets/img/home-pc-1.png'
+import pcbuild1 from '../../../assets/img/home-pc-1.png'
+import pcbuild2 from '../../../assets/img/home-pc-2.png'
+import pcbuild3 from '../../../assets/img/home-pc-3.png'
 
 const StartAnimation: React.FC = () => {
   return (
@@ -13,9 +15,9 @@ const StartAnimation: React.FC = () => {
         </div>
       </div>
       <div className='PC_images'>
-        <img className='Image' src={pcbuild} alt='1' />
-        <img className='Image' src={pcbuild} alt='1' />
-        <img className='Image' src={pcbuild} alt='1' />
+        <img className='Image' src={pcbuild1} alt='1' />
+        <img className='Image' src={pcbuild3} alt='1' />
+        <img className='Image' src={pcbuild2} alt='1' />
       </div>
     </div>
   )

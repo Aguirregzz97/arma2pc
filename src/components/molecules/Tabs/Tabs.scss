@@ -1,7 +1,11 @@
 @import '../../../styles/shared.scss';
 
-div.Logo {
-  font-size: 1.1rem;
+img.Logo {
+  height: auto;
+  width: 200px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 div.Header_container {

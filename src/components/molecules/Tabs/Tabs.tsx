@@ -11,6 +11,7 @@ import { getTabIndex } from '../../../utils/GetTabIndex'
 import IconButton from '../../atoms/IconButton/IconButton'
 import Tab from '../../atoms/Tab/Tab'
 import DialogMobile from '../../organisms/Navbar/DialogMobile/DialogMobile'
+import logo from './../../../assets/img/logo3.png'
 
 export type TabsProps = {
   tabs: string[]
@@ -33,7 +34,11 @@ const Tabs: React.FC<TabsProps> = ({ tabs }) => {
     <>
       <div className='Header_container'>
         <div className='Navbar_container'>
-          <div className='Logo'>Arma2PC.com</div>
+          <img
+            onClick={() => history.push('/Home')}
+            className='Logo'
+            src={logo}
+          />
           <div className='Tabs'>
             {tabs.map((tab, index) => {
               const status = index === activeTab ? 'Tab_active' : 'Tab_inactive'
