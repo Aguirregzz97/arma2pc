@@ -1,0 +1,28 @@
+@import './../../../styles/shared.scss';
+
+div.CirclesAnimation_container {
+  svg {
+    animation: spin 4s infinite ease-in-out;
+    height: 17rem;
+    width: 17rem;
+  }
+  circle {
+    fill: transparent;
+    stroke: $core-white;
+    stroke-width: 0.15rem;
+  }
+
+  .dashed {
+    stroke-dasharray: 15, 20;
+    stroke-linecap: round;
+  }
+}
+
+@keyframes spin {
+  90% {
+    transform: rotate(1080deg);
+  }
+  100% {
+    transform: rotate(1080deg);
+  }
+}

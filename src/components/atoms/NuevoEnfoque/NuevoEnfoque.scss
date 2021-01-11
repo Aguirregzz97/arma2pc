@@ -1,0 +1,87 @@
+@import './../../../styles/shared.scss';
+
+div.NuevoEnfoque_container {
+  display: flex;
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20rem;
+  margin-bottom: 25rem;
+
+  @media only screen and (max-width: 2300px) {
+    width: 50%;
+  }
+
+  @media only screen and (max-width: 2000px) {
+    width: 60%;
+  }
+
+  @media only screen and (max-width: 1350px) {
+    width: 60%;
+    flex-direction: column;
+  }
+
+  @include respond-to(medium-screens) {
+    width: 60%;
+    flex-direction: column;
+  }
+
+  @include respond-to(small-screens) {
+    width: 70%;
+    flex-direction: column-reverse;
+  }
+
+  @include respond-to(xsmall-screens) {
+    width: 80%;
+    flex-direction: column-reverse;
+    margin-top: 0;
+  }
+
+  & > :first-child {
+    margin-right: 12rem;
+    @media only screen and (max-width: 1350px) {
+      margin-right: 0;
+    }
+    & > .CirclesAnimation_container {
+      @media only screen and (max-width: 1350px) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+      }
+      @include respond-to(medium-screens) {
+        display: flex;
+        align-items: center;
+        margin-top: 4rem;
+        margin-bottom: 0;
+      }
+
+      @include respond-to(small-screens) {
+        display: flex;
+        align-items: center;
+        margin-top: 4rem;
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+      }
+
+      @include respond-to(xsmall-screens) {
+        display: flex;
+        align-items: center;
+        margin-top: 4rem;
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+      }
+
+      & > svg {
+        @include respond-to(xsmall-screens) {
+          width: 14rem;
+          height: 14rem;
+        }
+      }
+    }
+  }
+  & > :nth-child(2) {
+    @media only screen and (max-width: 1350px) {
+      margin-top: 3rem;
+    }
+  }
+}
