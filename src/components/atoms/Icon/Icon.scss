@@ -30,6 +30,12 @@ div.Icon_provider {
     contain;
 }
 
+div.Icon_chevron_right {
+  mask: url('../../../assets/icons/chevron-right.svg');
+  -webkit-mask: url('../../../assets/icons/chevron-right.svg') no-repeat center /
+    contain;
+}
+
 div.Icon_sm {
   height: 1rem;
   width: 1rem;

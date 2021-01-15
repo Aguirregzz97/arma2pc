@@ -7,6 +7,7 @@ export type IconType =
   | 'Icon_close'
   | 'Icon_client'
   | 'Icon_provider'
+  | 'Icon_chevron_right'
 
 export type IconSize = 'sm' | 'md' | 'lg' | 'xlg'
 export type IconColor = 'grey' | 'yellow' | 'white' | 'black'
