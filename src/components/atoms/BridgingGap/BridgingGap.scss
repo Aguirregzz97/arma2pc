@@ -52,7 +52,7 @@ div.BridgingGap_container {
       padding: 0 3.75rem;
     }
     & > img {
-      animation: spin 10s linear infinite;
+      animation: spin 30s linear infinite;
       width: 15rem;
       height: 15rem;
       @include respond-to(xsmall-screens) {
