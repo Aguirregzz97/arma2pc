@@ -26,10 +26,19 @@ const Transition = React.forwardRef(function Transition(
 
 const Tabs: React.FC<TabsProps> = ({ tabs }) => {
   const url = window.location.href
-  const currentTabIndex: number = getTabIndex(getLastURL(url))
+  const lastUrl = getLastURL(url)
+  const currentTabIndex: number = getTabIndex(lastUrl)
   const [dialogOpen, setDialogOpen] = React.useState(false)
   const [activeTab, setActiveTab] = React.useState(currentTabIndex)
   const history = useHistory()
+  React.useEffect(() => {
+    return history.listen(() => {
+      const url = window.location.href
+      const lastUrl = getLastURL(url)
+      const currentTabIndex: number = getTabIndex(lastUrl)
+      setActiveTab(currentTabIndex)
+    })
+  }, [history])
   return (
     <>
       <div className='Header_container'>
