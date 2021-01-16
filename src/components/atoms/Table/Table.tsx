@@ -59,7 +59,9 @@ const Table: React.FC = () => {
           <td>
             <Check />
           </td>
-          <td></td>
+          <td>
+            <Icon type='Icon_question' color='yellow' size='lg' />
+          </td>
         </tr>
       </table>
     </div>
