@@ -42,6 +42,24 @@ div.Icon_check {
     contain;
 }
 
+div.Icon_expand_less {
+  mask: url('../../../assets/icons/expand-less.svg');
+  -webkit-mask: url('../../../assets/icons/expand-less.svg') no-repeat center /
+    contain;
+}
+
+div.Icon_expand_more {
+  mask: url('../../../assets/icons/expand-more.svg');
+  -webkit-mask: url('../../../assets/icons/expand-more.svg') no-repeat center /
+    contain;
+}
+
+div.Icon_question {
+  mask: url('../../../assets/icons/question.svg');
+  -webkit-mask: url('../../../assets/icons/question.svg') no-repeat center /
+    contain;
+}
+
 div.Icon_sm {
   height: 1rem;
   width: 1rem;

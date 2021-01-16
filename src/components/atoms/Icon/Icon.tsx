@@ -9,6 +9,9 @@ export type IconType =
   | 'Icon_provider'
   | 'Icon_chevron_right'
   | 'Icon_check'
+  | 'Icon_expand_less'
+  | 'Icon_expand_more'
+  | 'Icon_question'
 
 export type IconSize = 'sm' | 'md' | 'lg' | 'xlg'
 export type IconColor = 'grey' | 'yellow' | 'white' | 'black'
