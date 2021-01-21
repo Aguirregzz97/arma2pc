@@ -14,7 +14,6 @@ module.exports = merge(common(), {
     filename: '[name].js',
     path: paths.DIST,
     crossOriginLoading: 'anonymous',
-    publicPath: 'http://localhost:8080/'
   },
   module: {
     rules: [

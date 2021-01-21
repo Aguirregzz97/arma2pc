@@ -33,7 +33,6 @@ module.exports = merge(common(), {
   output: {
     filename: '[name]_[contenthash].min.js',
     path: paths.DIST,
-    publicPath: '', // Microsoft CDN
   },
   module: {
     rules: [{
