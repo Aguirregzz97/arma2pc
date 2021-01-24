@@ -12,6 +12,13 @@ export type IconType =
   | 'Icon_expand_less'
   | 'Icon_expand_more'
   | 'Icon_question'
+  | 'Icon_memory'
+  | 'Icon_storage'
+  | 'Icon_motherboard'
+  | 'Icon_processor'
+  | 'Icon_gpu'
+  | 'Icon_money'
+  | 'Icon_pc'
 
 export type IconSize = 'sm' | 'md' | 'lg' | 'xlg'
 export type IconColor = 'grey' | 'yellow' | 'white' | 'black'

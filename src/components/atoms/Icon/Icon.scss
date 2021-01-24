@@ -60,6 +60,46 @@ div.Icon_question {
     contain;
 }
 
+div.Icon_memory {
+  mask: url('../../../assets/icons/memory.svg');
+  -webkit-mask: url('../../../assets/icons/memory.svg') no-repeat center /
+    contain;
+}
+
+div.Icon_storage {
+  mask: url('../../../assets/icons/storage.svg');
+  -webkit-mask: url('../../../assets/icons/storage.svg') no-repeat center /
+    contain;
+}
+
+div.Icon_motherboard {
+  mask: url('../../../assets/icons/motherboard.svg');
+  -webkit-mask: url('../../../assets/icons/motherboard.svg') no-repeat center /
+    contain;
+}
+
+div.Icon_processor {
+  mask: url('../../../assets/icons/processor.svg');
+  -webkit-mask: url('../../../assets/icons/processor.svg') no-repeat center /
+    contain;
+}
+
+div.Icon_gpu {
+  mask: url('../../../assets/icons/gpu.svg');
+  -webkit-mask: url('../../../assets/icons/gpu.svg') no-repeat center / contain;
+}
+
+div.Icon_money {
+  mask: url('../../../assets/icons/money.svg');
+  -webkit-mask: url('../../../assets/icons/money.svg') no-repeat center /
+    contain;
+}
+
+div.Icon_pc {
+  mask: url('../../../assets/icons/pc.svg');
+  -webkit-mask: url('../../../assets/icons/pc.svg') no-repeat center / contain;
+}
+
 div.Icon_sm {
   height: 1rem;
   width: 1rem;
