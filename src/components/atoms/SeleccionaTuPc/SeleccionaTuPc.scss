@@ -1,0 +1,33 @@
+@import './../../../styles/typing.scss';
+
+div.SeleccionaTuPc_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15rem;
+  padding-bottom: 4rem;
+
+  @include respond-to(xsmall-screens) {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  @include respond-to(small-screens) {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  & > :first-child {
+    @include respond-to(xsmall-screens) {
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 0;
+    }
+    & > h1 {
+      display: inline-block;
+      @include typing(3rem, 1s);
+      @include respond-to(xsmall-screens) {
+        font-size: 1.05rem;
+      }
+    }
+  }
+}

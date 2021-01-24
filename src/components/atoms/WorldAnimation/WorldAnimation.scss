@@ -36,22 +36,22 @@ div.WorldAnimation_container {
 
   div.Dot_world {
     display: absolute;
-    margin-top: 11rem;
+    margin-top: 11.8rem;
     margin-left: 2.5rem;
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
     background-color: $core-yellow;
     @include respond-to(medium-screens) {
-      margin-top: 8.8rem;
+      margin-top: 8.7rem;
       margin-left: 2.1rem;
     }
     @include respond-to(small-screens) {
-      margin-top: 8.8rem;
+      margin-top: 8.7rem;
       margin-left: 2.1rem;
     }
     @include respond-to(xsmall-screens) {
-      margin-top: 8.8rem;
+      margin-top: 8.7rem;
       margin-left: 2.1rem;
     }
   }

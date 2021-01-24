@@ -4,6 +4,7 @@ import { Redirect, Route, Switch } from 'react-router-dom'
 import BlackBg from '../components/atoms/BlackBg/BlackBg'
 import Contact from '../components/molecules/Contact/Contact'
 import About from '../components/organisms/Navbar/About/About'
+import ArmaTuPc from '../components/organisms/Navbar/ArmaTuPc/ArmaTuPc'
 import FAQ from '../components/organisms/Navbar/FAQ/FAQ'
 import Home from '../components/organisms/Navbar/Home/Home'
 import Navbar from '../components/organisms/Navbar/Navbar'
@@ -19,7 +20,7 @@ const Main: React.FC = () => {
         </Route>
         <Route path='/Arma2PC'>
           <Navbar>
-            <div>ArmaTuPC Content</div>
+            <ArmaTuPc />
           </Navbar>
         </Route>
         <Route path='/About'>

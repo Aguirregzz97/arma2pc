@@ -1,0 +1,45 @@
+@import './../../../styles/shared.scss';
+@import './../../../styles/typing.scss';
+
+div.Customizabilidad_container {
+  width: 50%;
+  margin-top: 23rem;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include respond-to(medium-screens) {
+    margin-top: 5rem;
+    width: 75%;
+  }
+  @include respond-to(small-screens) {
+    margin-top: 2rem;
+    width: 80%;
+  }
+  @include respond-to(xsmall-screens) {
+    margin-top: 0;
+    width: 80%;
+  }
+
+  & > .Customizabilidad_title {
+    :first-child {
+      font-size: 1.375rem;
+      color: $core-yellow;
+      border-bottom: 2px solid $core-white;
+      padding-bottom: 0.4rem;
+      margin-bottom: 2rem;
+    }
+    :nth-child(2) {
+      font-size: 3rem;
+      color: $core-white;
+      @include respond-to(medium-screens) {
+        font-size: 2rem;
+      }
+      @include respond-to(small-screens) {
+        font-size: 1.5rem;
+      }
+      @include respond-to(xsmall-screens) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

@@ -26,7 +26,10 @@ const ContactInfo: React.FC = () => {
         El entusiasmo y dedicacion de los trabajadores de arma2PC.com son la
         clave para la mejor posible PC que puedes armar en el momento
       </p>
-      <ContactMedia name='E-mail' value='aguirregzz97@gmail.com' />
+      <ContactMedia
+        name='E-mail -- telefono'
+        value='contacto@arma2pc.com 811022325'
+      />
     </div>
   )
 }
