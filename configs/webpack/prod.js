@@ -35,12 +35,18 @@ module.exports = merge(common(), {
     path: paths.DIST,
   },
   module: {
-    rules: [{
-      test: /\.s?css$/,
-      use: [
-        MiniCssExtractPlugin.loader,
-        { loader: 'css-loader', options: { importLoaders: 1 } }
-      ],
-    }]
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [
+          // Creates `style` nodes from JS strings
+          "style-loader",
+          // Translates CSS into CommonJS
+          "css-loader",
+          // Compiles Sass to CSS
+          "sass-loader",
+        ],
+      },
+    ]
   }
 });
