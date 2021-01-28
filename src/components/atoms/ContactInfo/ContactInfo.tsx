@@ -27,7 +27,7 @@ const ContactInfo: React.FC = () => {
         clave para la mejor posible PC que puedes armar en el momento
       </p>
       <ContactMedia
-        name='E-mail -- telefono'
+        name='E-mail - telefono'
         value='contacto@arma2pc.com 811022325'
       />
     </div>
