@@ -28,7 +28,8 @@ module.exports = env => {
 
       // HTML entries
       new HtmlWebpackPlugin({
-        template: './src/index.html'
+        template: './src/index.html',
+        favicon: './src/assets/icons/favicon.ico'
       }),
 
       // Get full error detail for errors caught by windows.onerror (https://blog.sentry.io/2016/05/17/what-is-script-error.html)
