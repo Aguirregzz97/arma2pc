@@ -7,9 +7,14 @@ div.Options_container {
   margin-left: auto;
   margin-right: auto;
   flex-wrap: wrap;
+  margin-bottom: 30rem;
 
   @media only screen and (max-width: 2100px) {
     width: 85%;
+  }
+
+  @include respond-to(xlarge-screens) {
+    margin-bottom: 20rem;
   }
 
   @include respond-to(large-screens) {
@@ -17,24 +22,28 @@ div.Options_container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 15rem;
   }
   @include respond-to(medium-screens) {
     width: 85%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10rem;
   }
   @include respond-to(small-screens) {
     width: 85%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 7rem;
   }
   @include respond-to(xsmall-screens) {
     width: 85%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5rem;
   }
   & > section {
     padding-top: 3rem;
@@ -64,6 +73,13 @@ div.Options_container {
         opacity: 0;
         animation: showImages 0.6s 0.2s forwards;
         width: 28rem;
+
+        @include respond-to(xlarge-screens) {
+          width: 23rem;
+        }
+        @include respond-to(large-screens) {
+          width: 22rem;
+        }
         @include respond-to(medium-screens) {
           width: 20rem;
         }

@@ -1,10 +1,19 @@
 @import './../../../styles/shared.scss';
 
 div.Contact_container {
-  margin-top: 23rem;
-  margin-bottom: 23rem;
+  margin-top: 20rem;
+  margin-bottom: 20rem;
   display: flex;
   justify-content: center;
+
+  @include respond-to(xlarge-screens) {
+    margin-top: 7rem;
+  }
+
+  @include respond-to(large-screens) {
+    margin-top: 5rem;
+  }
+
   @include respond-to(medium-screens) {
     flex-direction: column;
     align-items: center;

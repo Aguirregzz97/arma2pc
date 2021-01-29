@@ -3,7 +3,11 @@
 
 div.StartAnimation_container {
   padding-top: 14rem;
-  padding-bottom: 20rem;
+  padding-bottom: 30rem;
+  @include respond-to(xlarge-screens) {
+    padding-top: 3rem;
+    padding-bottom: 20rem;
+  }
   @include respond-to(xsmall-screens) {
     width: 80%;
     margin-right: auto;
@@ -19,16 +23,19 @@ div.Animation_container {
   align-items: center;
   margin: 2.7rem 0;
   margin-bottom: 8rem;
+  @include respond-to(xlarge-screens) {
+    margin: 2rem 0;
+  }
   @include respond-to(medium-screens) {
-    margin: 2.8rem 0;
+    margin: 2rem 0;
   }
 
   @include respond-to(small-screens) {
-    margin: 2.6rem 0;
+    margin: 1.8rem 0;
   }
 
   @include respond-to(xsmall-screens) {
-    margin: 2.4rem 0;
+    margin: 1.6rem 0;
   }
   & > .Text h1 {
     @include typing(3rem, 1.5s);

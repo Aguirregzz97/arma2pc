@@ -1,1 +1,1 @@
-export const TabsObject = ['Home', 'Arma2pc', 'About', 'Contact', 'Faq']
+export const TabsObject = ['home', 'arma2pc', 'about', 'contact', 'faq']

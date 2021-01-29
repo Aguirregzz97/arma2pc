@@ -3,9 +3,18 @@
 
 div.OurMission_container {
   width: 50%;
-  margin-top: 23rem;
+  margin-top: 20rem;
+  margin-bottom: 30rem;
   margin-right: auto;
   margin-left: auto;
+
+  @include respond-to(xlarge-screens) {
+    margin-top: 5rem;
+  }
+
+  @include respond-to(large-screens) {
+    margin-top: 5rem;
+  }
 
   @include respond-to(medium-screens) {
     margin-top: 5rem;

@@ -13,34 +13,34 @@ const Main: React.FC = () => {
   return (
     <BlackBg>
       <Switch>
-        <Route path='/Home'>
+        <Route path='/home'>
           <Navbar>
             <Home />
           </Navbar>
         </Route>
-        <Route path='/Arma2PC'>
+        <Route path='/arma2PC'>
           <Navbar>
             <ArmaTuPc />
           </Navbar>
         </Route>
-        <Route path='/About'>
+        <Route path='/about'>
           <Navbar>
             <About />
           </Navbar>
         </Route>
-        <Route path='/Contact'>
+        <Route path='/contact'>
           <Navbar>
             <Contact />
           </Navbar>
         </Route>
-        <Route path='/Faq'>
+        <Route path='/faq'>
           <Navbar>
             <FAQ />
           </Navbar>
         </Route>
         <Route path='*'>
           <Navbar>
-            <Redirect to='/Home' />
+            <Redirect to='/home' />
           </Navbar>
         </Route>
       </Switch>

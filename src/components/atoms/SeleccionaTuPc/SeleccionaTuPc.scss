@@ -4,8 +4,21 @@ div.SeleccionaTuPc_container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 15rem;
+  padding-top: 14rem;
   padding-bottom: 4rem;
+
+  @include respond-to(xlarge-screens) {
+    padding-top: 3rem;
+    padding-bottom: 0;
+  }
+
+  @include respond-to(large-screens) {
+    padding-top: 3rem;
+  }
+
+  @include respond-to(medium-screens) {
+    padding-top: 3rem;
+  }
 
   @include respond-to(xsmall-screens) {
     padding-top: 2rem;

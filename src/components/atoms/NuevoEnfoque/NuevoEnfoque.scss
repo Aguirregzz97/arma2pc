@@ -5,8 +5,11 @@ div.NuevoEnfoque_container {
   width: 40%;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 20rem;
-  margin-bottom: 25rem;
+  margin-bottom: 30rem;
+
+  @include respond-to(xlarge-screens) {
+    margin-bottom: 20rem;
+  }
 
   @media only screen and (max-width: 2300px) {
     width: 50%;

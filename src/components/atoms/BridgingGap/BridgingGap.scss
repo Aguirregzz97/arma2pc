@@ -5,8 +5,7 @@ div.BridgingGap_container {
   width: 50%;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 45rem;
-  margin-bottom: 25rem;
+  margin-bottom: 20rem;
 
   @media only screen and (max-width: 1900px) {
     width: 70%;
@@ -30,7 +29,6 @@ div.BridgingGap_container {
   @include respond-to(xsmall-screens) {
     width: 80%;
     flex-direction: column;
-    margin-top: 10rem;
   }
 
   & > :first-child {

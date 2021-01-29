@@ -4,6 +4,15 @@
 div.FAQ_container {
   margin-top: 15rem;
   margin-bottom: 20rem;
+  @include respond-to(xlarge-screens) {
+    margin-top: 5rem;
+  }
+  @include respond-to(large-screens) {
+    margin-top: 5rem;
+  }
+  @include respond-to(medium-screens) {
+    margin-top: 5rem;
+  }
   @include respond-to(xsmall-screens) {
     margin-top: 2rem;
     margin-bottom: 5rem;

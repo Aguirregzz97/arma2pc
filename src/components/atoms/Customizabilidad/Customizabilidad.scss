@@ -3,20 +3,16 @@
 
 div.Customizabilidad_container {
   width: 50%;
-  margin-top: 23rem;
   margin-right: auto;
   margin-left: auto;
 
   @include respond-to(medium-screens) {
-    margin-top: 5rem;
     width: 75%;
   }
   @include respond-to(small-screens) {
-    margin-top: 2rem;
     width: 80%;
   }
   @include respond-to(xsmall-screens) {
-    margin-top: 0;
     width: 80%;
   }
 
