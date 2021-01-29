@@ -1,48 +1,48 @@
-@import './styles/shared.scss';
+@import "./styles/shared.scss";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Quicksand:wght@500&family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Roboto+Mono&family=Work+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Quicksand:wght@500&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Roboto+Mono&family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap");
 
 // root styles
 :root {
-  font-size: 16px;
-  font-family: 'Quicksand';
-  color: $core-white;
-  * {
-    box-sizing: border-box;
-  }
+	font-size: 12px;
+	font-family: "Quicksand";
+	color: $core-white;
+	* {
+		box-sizing: border-box;
+	}
 }
 
 body {
-  @include scrollbars();
-  line-height: 1.67;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
+	@include scrollbars();
+	line-height: 1.67;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
 }
 
 button {
-  font-family: 'Quicksand';
-  font-size: 16px;
+	font-family: "Quicksand";
+	font-size: 16px;
 }
 
 html {
-  height: 100%;
+	height: 100%;
 }
 
 p {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 h1 {
-  font-weight: normal;
+	font-weight: normal;
 }
 
 .App {
-  min-height: 100vh;
-  min-width: 100vw;
+	min-height: 100vh;
+	min-width: 100vw;
 }
