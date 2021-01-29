@@ -6,7 +6,19 @@ div.StartAnimation_container {
   padding-bottom: 30rem;
   @include respond-to(xlarge-screens) {
     padding-top: 3rem;
+    padding-bottom: 25rem;
+  }
+  @include respond-to(large-screens) {
+    padding-top: 3rem;
     padding-bottom: 20rem;
+  }
+  @include respond-to(medium-screens) {
+    padding-top: 3rem;
+    padding-bottom: 20rem;
+  }
+  @include respond-to(small-screens) {
+    padding-top: 3rem;
+    padding-bottom: 15rem;
   }
   @include respond-to(xsmall-screens) {
     width: 80%;
