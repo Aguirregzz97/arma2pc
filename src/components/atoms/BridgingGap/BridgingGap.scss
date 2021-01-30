@@ -46,7 +46,7 @@ div.BridgingGap_container {
     }
     @include respond-to(xsmall-screens) {
       padding: 0 4rem;
-      width: 575px;
+      width: 450px;
       padding: 0 3.75rem;
     }
     & > img {
