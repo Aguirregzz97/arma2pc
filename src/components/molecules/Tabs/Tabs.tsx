@@ -44,7 +44,7 @@ const Tabs: React.FC<TabsProps> = ({ tabs }) => {
       <div className='Header_container'>
         <div className='Navbar_container'>
           <img
-            onClick={() => history.push('/Home')}
+            onClick={() => history.push('/home')}
             className='Logo'
             src={logo}
           />
